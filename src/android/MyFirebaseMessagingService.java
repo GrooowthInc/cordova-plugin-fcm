@@ -40,7 +40,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 			Log.d(TAG, "\tNotification Title: " + remoteMessage.getNotification().getTitle());
             data.put("title",remoteMessage.getNotification().getTitle());
 			Log.d(TAG, "\tNotification Message: " + remoteMessage.getNotification().getBody());
-            data.put("message",remoteMessage.getNotification().getBody());
+            data.put("body",remoteMessage.getNotification().getBody());
 		}
 		
 		data.put("wasTapped", false);
