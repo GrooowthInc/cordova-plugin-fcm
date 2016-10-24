@@ -38,7 +38,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         Map<String, Object> data = new HashMap<String, Object>();
 		if( remoteMessage.getNotification() != null){
 			Log.d(TAG, "\tNotification Title: " + remoteMessage.getNotification().getTitle());
-            data.put("title",remoteMessage.getNotification().getTite());
+            data.put("title",remoteMessage.getNotification().getTitle());
 			Log.d(TAG, "\tNotification Message: " + remoteMessage.getNotification().getBody());
             data.put("message",remoteMessage.getNotification().getBody());
 		}
